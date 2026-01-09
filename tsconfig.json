@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+, "app/auth/signin.jsx", "app/(sidebar)/student/joinclass.jsx", "app/(sidebar)/student/payment.jsx", "app/(sidebar)/student/profile.jsx", "app/(sidebar)/student/studentclasses.jsx", "app/(sidebar)/teacher/approval.jsx", "app/(sidebar)/teacher/dashboard.jsx", "app/(sidebar)/teacher/earnings.jsx", "app/(sidebar)/teacher/myclasses.jsx", "hooks/cloudinaryConfig.js"  ]
+}

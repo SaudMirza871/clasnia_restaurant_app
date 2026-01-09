@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "clasnia",
+    "slug": "clasnia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Icon-1024.png",
+    "scheme": "clasnia",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to upload QR codes.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library to upload QR codes."
+      }
+    },
+    "android": {
+      "package": "com.anonymous.clasnia",
+      "versionCode": 1,
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Icon-1024.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/Icon-1024.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/Icon-1024.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-web-browser",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "owner": "pravinavhadweb",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9662695c-1343-4896-8c84-a45d0215def8"
+      }
+    }
+  }
+}
